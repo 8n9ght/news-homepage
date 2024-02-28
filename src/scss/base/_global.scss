@@ -1,0 +1,15 @@
+html, body, #root, .wrapper, .news{
+    width: 100%;
+}
+
+.wrapper{
+    padding: 1.5rem 1rem;
+    @include flexCol;
+    gap: 2rem;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

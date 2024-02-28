@@ -1,0 +1,73 @@
+.news__main{
+    @include flexCol;
+    gap: 1rem;
+    &__img{
+        @include mainImg
+    }
+    &__content{
+        @include flexCol;
+        gap: 1rem;
+        &__text{
+            line-height: 1.5rem;
+        }
+    }
+}
+
+.news__side{
+    background: hsl(240, 100%, 5%);
+    padding: 2rem 1rem;
+    @include flexCol;
+    gap: 2rem;
+    &__title{
+        color: hsl(35, 77%, 62%);
+    }
+    &__content{
+        @include flexCol;
+        gap: 2rem;
+        &__card{
+            @include flexCol;
+            gap: .5rem;
+            &__title{
+                color: hsl(36, 100%, 99%);
+            }
+            &__text{
+                color:hsl(233, 8%, 79%);
+            }
+        }
+    }
+}
+
+
+.news__others{
+    @include flexCol;
+    gap: 1rem;
+    &__info{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        &__img{
+            @include articleImg
+        }
+        &__content{
+            @include flexCol;
+            gap: .5rem;
+            &__num{
+                font-size: 1.5rem;
+                color: hsl(233, 8%, 79%);
+            }
+            &__title{
+                color: hsl(240, 100%, 5%);
+            }
+            &__text{
+                color: hsl(236, 13%, 42%);
+            }
+        }
+    }
+}
+
+.divide{
+    width: 100%;
+    height: .01rem;
+    background: hsl(233, 8%, 79%);
+    display: block;
+}

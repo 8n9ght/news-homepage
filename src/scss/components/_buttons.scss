@@ -1,0 +1,16 @@
+.news{
+    &__main{
+        &__content{
+            &__btn{
+                border: none;
+                padding: .5rem 1.5rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                max-width: 45%;
+                background: hsl(5, 85%, 63%);
+                color: hsl(36, 100%, 99%);
+                font-family: interBold;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@mixin articleImg{
+    width: 6rem;
+    height: auto;
+}
+
+@mixin mainImg{
+    width: 100%;
+    height: auto;
+}
+
+@mixin flexCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
