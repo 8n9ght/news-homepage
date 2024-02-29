@@ -1,0 +1,31 @@
+@media screen and (min-width: 1440px){
+    .header{
+        &__menu{
+            display: none;
+            &--close{
+                display: none;
+            }
+        }
+        &__nav{
+            display: flex;
+            &__list{
+                position: initial;
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+                &__links{
+                    display: flex;
+                    flex-direction: row;
+                    position: initial;
+                    gap: 3rem;
+                    &__item{
+                        &:hover{
+                            color: hsl(35, 77%, 62%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

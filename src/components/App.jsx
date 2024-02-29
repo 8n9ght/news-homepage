@@ -31,12 +31,14 @@ function App() {
       <div className="news">
         <div className="news__main">
           <img className="news__main__img" alt="main content" src="./images/image-web-3-mobile.jpg" />
-          <h1 className="news__main__title">The Bright Future of Web 3.0?</h1>
-          <article className="news__main__content">
-            <p className="news__main__content__text">
-            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
-            </p>
-            <button className="news__main__content__btn">Read more</button>
+            <article className="news__main__wrapper">
+            <h1 className="news__main__title">The Bright Future of Web 3.0?</h1>
+            <article className="news__main__content">
+              <p className="news__main__content__text">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+              </p>
+              <button className="news__main__content__btn">Read more</button>
+            </article>
           </article>
         </div>
         

@@ -4,6 +4,10 @@
     &__img{
         @include mainImg
     }
+    &__wrapper{
+        @include flexCol;
+        gap: .5rem;
+    }
     &__content{
         @include flexCol;
         gap: 1rem;

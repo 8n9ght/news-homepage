@@ -65,6 +65,12 @@ a {
   width: 100%;
   height: auto;
 }
+.news__main__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
 .news__main__content {
   display: flex;
   flex-direction: column;
@@ -213,6 +219,100 @@ a {
 }
 .credits a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    padding: 2rem 8rem;
+  }
+  .news {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 5rem;
+  }
+  .news__main {
+    max-width: 65%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 0rem;
+    justify-content: space-between;
+  }
+  .news__main__img {
+    width: 100%;
+    content: url("./../../public/images/image-web-3-desktop.jpg");
+  }
+  .news__main__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .news__main__title {
+    font-size: 3rem;
+  }
+  .news__main__content {
+    max-width: 50%;
+    justify-content: space-between;
+  }
+  .news__main__content p {
+    font-size: 17px;
+  }
+  .news__main__content__btn {
+    max-width: 60%;
+    padding: 1rem;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+  }
+  .news__main__content__btn:hover {
+    cursor: pointer;
+    background: hsl(240, 100%, 5%);
+  }
+  .news__side {
+    width: 32.4%;
+    padding: 1.5rem 2rem;
+  }
+  .news__side__title {
+    font-size: 2.5rem;
+  }
+  .news__side__content__card__title:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+  }
+  .news__others {
+    flex-grow: 2;
+    flex-direction: row;
+  }
+  .news__others__info__content__title:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__menu {
+    display: none;
+  }
+  .header__menu--close {
+    display: none;
+  }
+  .header__nav {
+    display: flex;
+  }
+  .header__nav__list {
+    position: initial;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+  .header__nav__list__links {
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    gap: 3rem;
+  }
+  .header__nav__list__links__item:hover {
+    color: hsl(35, 77%, 62%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
